@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- remark js -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    
+    @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=M+PLUS+1p:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=M+PLUS+1p:wght@500&family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap');
+    body {
+	font-family: fantasy,"M PLUS Rounded 1c","Kiwi Maru",'Droid Serif';
+	background: hsl(200, 40%, 40%);
+	color: hsl(0, 0%, 75%);
+    }
+    
+    h1, h2, h3, h4, li {
+	
+
+        font-family: "M PLUS Rounded 1c","Kiwi Maru",'Yanone Kaffeesatz';
+        font-weight: normal;
+    }
+    
+    img[alt=drawing] { width: 200px; }
+    
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    .inverse {
+	font-size: 24px;
+	background: hsl(200, 40%, 40%);
+	color: hsl(0, 0%, 75%);
+    }
+
+    .column-left{
+	float: left;
+	width: 47.5%;
+	text-align: left;
+    }
+    .column-right{
+	float: right;
+	width: 47.5%;
+	text-align: left;
+    }
+    .column-one{
+	float: left;
+	width: 100%;
+	text-align: left;
+    }
+    
+    strong{
+	font-weight: bold;
+	color: hsl(100,40%,80%);
+    }
+
+    em{
+	font-weight: bold;
+	font-style: normal;
+	color: hsl(20,40%,80%);
+    }
+
+    .MathJax {
+	font-size: 0.8ex;
+	!important;
+    }
+
+    </style>
+  </head>
+  
+  <body>
+    <textarea id="source">
+
+class: inverse,center,middle
+      
+
+---
+
+layout: true
+class: inverse
+<!-- (この部分が以下のスライドに適用される。-->
+
+---
+## Thermodynamics
+
+### Temperature and equilibrium states
+
+#### Temperature
+
+#### Ideal gas temperature
+
+#### Equilibrium
+
+#### State variables and equation of state
+
+#### Equilibrium between systems
+
+---
+### Temperature
+
+Five basic dimensions in the SI unit system are length, mass, time, electric
+current, and temperature. (Amount of substance and
+luminous intensity are sometimes added to above 5 dimensions.)
+
+Therefore, temperature is a fundamental concept that is basically
+predefined by human experiences. (Think that you know what length is.)
+So let's just assume that we know temperature that quantifies the hotness
+of a substance. We can still define its scale and reference
+points. Later, we will define the ** absolute temperature **. But for
+the moment, let's use ** ideal gas temperature ** explained below. 
+
+---
+### Ideal gas temperature
+
+Let's consider a gas, whose molar amount (1 mol = $6\times 10^{23}$),
+pressure, volume, and temperature are respectively, $N$, $P$, $V$ and
+$T$. Then it is an ideal gas if there is a relation among them,
+\begin{align}
+PV &=NRT
+\end{align}
+where $R$ is the **gas constant**, necessary to adjust dimension of $NT$ to that of $PV$.
+
+This equation suggests that if we measure $PV/(NR)$, it will
+give us $T$. So an ideal gas can be used as a thermometer, and the
+temperature determined by an ideal gas thermometer is called the **
+ideal gas temperature**.
+---
+### Q. How can we measure pressure, given that we can measure force?
+
+---
+### Q. How can we measure pressure, given that we can measure force?
+
+### A.
+(pressure) = (force)/(area)
+<br>
+($P=F/A$).
+
+---
+### Equilibrium states
+
+Now let's define **systems** we will deal with and their **equilibrium** states. 
+<br><br>
+#### Systems
+Thermodynamics deals with **change of states in systems**. Here, the
+systems include any **macroscopic** systems, that is, systems we can
+observe directly. But in this lecture let's consider only **fluids**,
+that is, gas or liquid, as our targets. It makes it easier to imagine
+operations such as compression or expansion. Thermodynamics is, however, 
+applicable to any systems.
+---
+
+#### Equilibrium
+If a system is left without any operations to it for a long enough time, it
+will reach a state where **no macroscopic changes take place**. This state
+is called an **equilibrium state**.
+
+Or rather, we assume this:
+
+ *Any systems reach an equilibrium state if left for long enough time
+ without any operations after the last operation.*
+
+---
+### Equation of state
+
+Let's also assume this:
+
+*A combination of temperature and volume, $(T,V)$, of a fluid is enough
+to characterize its equilibrium state, if a type of substance, A, and
+its amount, $N$ are given.*
+
+So, we use $(T,V;\text{A},N)$ to specify an equilibrium state. Variables
+A and $N$ are sometimes omitted, when we deal with a fixed amount of a
+given fluid.
+
+If the system is not in a fluid state, we may need to add other
+variables. But as mentioned above, we will consider only fluid systems
+as our targets here.
+
+---
+What about pressure $P$? Now $P$ is determined according to an
+equilibrium state $(T,V)$. So \begin{align} P &= P(T,V;\text{A},N).
+\end{align} This is the **equation of state** of the system.
+
+Note that $P$ is given by the equation of state only when it is in
+**an equilibrium state** . In a non-equilibrium state, $P$ can be
+measured, but cannot be expressed in the form of equation of state,
+simply because $T$ is not defined there.
+
+<br><br>
+Q. What kind of situation is this?
+
+---
+### State variables
+
+Variables defined in the equilibrium state are **state
+variables**. They are determined automatically once the equilibrium
+state is determined.
+
+On the other hand, quantities such as work we
+consider later depends on the **process**, so they are not state
+variables.
+
+<br><br>
+Q. What is the process?
+
+---
+### 自己紹介
+* 名前 : 田中晋平
+* 担当 : 物理
+* 専門 : アクティブマターの物理
+* 興味 : 複雑さと秩序が自発的に現れる現象
+
+<video controls autoplay loop muted width="400" height="300" src="./170913-1_SDS10gpl_30ml_ES-P_ES80_OR0.0050_10ulx50_90mm_lid_25.0degC_camera3-4_10x.webm"> </video>
+---
+### アクティブマターとは
+* 直訳すると<span style="color: hsl(100,40%,80%);"> 活動する物質 </span>。つまり動きのある物質のこと。特に、
+* その物質が自分で自分の動きを作り出すとき、その物質をアクティブマターという。
+* アクティブマターはエネルギーを運動や物質に変換する。   
+
+<br />
+
+![](energy_flow.png)
+
+---
+### アクティブ油滴
+
+* 単純な物質でもアクティブマターとなり得る。
+* 油滴 = <span style="color: hsl(100,40%,80%);"> 生命のモデル </span>
+
+<center>
+    <video controls autoplay loop muted width="600" src="./130626.mp4"> </video>
+</center>
+
+---
+### アクティブ油滴の素材
+
+<div class="column-left">
+
+  有機溶媒（サリチル酸エチル）
+  <br><br>
+  <img src="./841018_ethyl_salicylate_841018_ethyl_salicylate_all-medium.jpg" width="300">
+
+</div>
+
+<div class="column-right">
+
+  界面活性剤（SDS)
+  <br><br>
+  <img src="./BLI3945.jpg" width="300">
+
+</div>
+
+<br><br><br><br>
+
+<div class="column-one">
+ごくありふれた物質に過ぎない。
+</div>
+
+---
+### アクティブさの起源: マランゴニ効果
+
+<center>
+  <img src="./marangoni.png" width="400"><br>
+  <br><br>
+  <img src="./feedback.png" width="600">
+</center>
+
+---
+### アクティブマターの階層構造
+
+<br>
+<center>
+  <video controls autoplay loop muted width="400" height="300" src="./170913-1_SDS10gpl_30ml_ES-P_ES80_OR0.0050_10ulx50_90mm_lid_25.0degC_camera3-4_10x.webm"> </video>
+</center>
+
+<br>
+<center>
+  <span style="font-size: 150%; color: hsl(100,40%,80%);">  アクティブな要素 → アクティブな集団 </span>
+</center>
+---
+### 生態系 : アクティブマターの階層構造
+
+<img src="ecosystem.png" width="800">
+
+---
+### まとめ
+
+* アクティブマターは生命のモデル。エネルギーを運動や物質に変換する。
+
+* アクティブマターの階層構造は、複雑なシステムとなる（例えば生態系）。
+
+* アクティブマターを利用して、自然界の複雑さが如何にして現れるのか、明らかにしたい。
+
+
+    </textarea>
+    <!--
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    -->
+
+    <script src="remark-latest.min.js" type="text/javascript"></script>
+    <script src='https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML' type="text/javascript"></script>
+    
+    <script type="text/javascript">
+      var slideshow = remark.create();
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+
+      MathJax.Hub.Config({
+	  CommonHTML: {
+	      scale: 45
+	  }
+      });
+      
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
+
+      MathJax.Hub.Configured();
+    </script>
+
+    <!--
+    <script type="module">
+      import remarkMath from 'https://cdn.skypack.dev/remark-math@5?min'
+    </script>
+
+      <script src="./remark-latest.min.js">
+    </script>
+    
+    <script>
+      var slideshow = remark.create();
+    </script>
+    -->
+
+  </body>
+</html>
+
+
+$$
+a = \alpha_a \int_0^\infty
+$$
